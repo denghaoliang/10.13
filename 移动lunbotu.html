@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+			   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+	<script type="text/javascript" src="js/swiper.js" ></script>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.swiper-container {
+							    width: 100%;
+							    height: 300px;
+
+							} 
+							
+										
+		</style>   
+	</head>
+	<body>
+	<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide" style="background: orange;" >Slide 1</div>
+		        <div class="swiper-slide" style="background: pink;">Slide 2</div>
+		        <div class="swiper-slide" style="background: aqua;">Slide 3</div>
+		    </div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination"></div>
+		    
+		    <!-- 如果需要导航按钮 -->
+		    <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>
+		    
+		    <!-- 如果需要滚动条 -->
+		    <div class="swiper-scrollbar"></div>		    
+	</div>	    
+	</body>
+	<script>
+	var mySwiper = new Swiper ('.swiper-container', {
+	    autoplay: 1000,
+	    autoplayDisableOnInteraction : false,
+//	    direction: 'vertical', //否则会竖着跑
+	    loop: true,
+	    
+	    // 如果需要分页器
+	    pagination: '.swiper-pagination',
+	    
+	    // 如果需要前进后退按钮
+	    nextButton: '.swiper-button-next',
+	    prevButton: '.swiper-button-prev',
+	    
+	    // 如果需要滚动条
+	    scrollbar: '.swiper-scrollbar',    
+		    
+	     })  
+	</script>
+	
+</html>
