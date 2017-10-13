@@ -40,11 +40,12 @@
 	</body>
 	<script>
 	var mySwiper = new Swiper ('.swiper-container', {
-	    autoplay: 1000,
+	   autoplay: 1000,
+	   speed:2000,
 	    autoplayDisableOnInteraction : false,
-//	    direction: 'vertical', //否则会竖着跑
-	    loop: true,
-	    
+	    direction: 'horizontal', //horizontal为横着跑，vertical为竖着跑
+	    loop:true,//false时，自己看一下效果就知道。
+
 	    // 如果需要分页器
 	    pagination: '.swiper-pagination',
 	    
